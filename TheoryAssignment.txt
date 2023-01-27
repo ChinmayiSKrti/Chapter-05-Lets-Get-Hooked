@@ -1,0 +1,14 @@
+1.What is the difference between Named export, Default export and * as export?
+->Refer Notes 8thJan2023.txt
+
+2.What is the importance of config.js?
+->config.js/constant.js is a file to keep all the constants required throughout our application
+Provides maintainability.
+
+3.What are React Hooks?
+->At the end of the day its a normal function
+
+4.Why do we need useState Hook?
+->useState - is a hook used to create state variables
+returns an array, first variable is variable name,
+second variable is function used to modify the state

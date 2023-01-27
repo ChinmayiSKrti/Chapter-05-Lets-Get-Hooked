@@ -1,0 +1,44 @@
+1.React's File structure: 
+Ref: https://reactjs.org/docs/faq-structure.html
+
+2.Two ways to export:
+i)Default Import : export default ComponentName;
+->Can be done if there is only one thing to be exported from that file
+When using default export, we can have different name for component being extracted
+ii)Named Imports : export by name
+->Can be used to export multiple things from a file
+Note: Named Import might look like object destructuring
+But it isnt, for example
+import obj from './componenets/Header'
+const {Title} = obj;
+OR 
+obj.Title 
+these above lines wont work.
+import * as Obj from './componenets/Header';
+Obj.Title can be done in that case
+
+import obj from './componenets/Header.js' works fine
+import obj from './componenets/Header.jsx' also works fine - 
+But sometimes some external libraries track our files with extensions, then it mightttt break,
+otherwise both .js or .jsx is fine.
+Better to use .js :)
+
+3.Always keep your code cleaner and maintainable
+Create new componenets and put it in different file wherever necessary
+
+4.One way data binding
+Normal variables are not tracked by react, so any change in any variable wont be reflected on UI 
+Inorder for react to track the variables that keeps changing its value,
+we use something know as state variables
+=>If you want to use local variables in React, use states
+
+5.Hooks
+At the end of the day its a normal function
+i)useState - is a hook used to create state variables
+returns an array, first variable is variable name, second variable is function used to modify the state
+
+6.Synthetic events
+
+7.variables to be in sync with UI - use state variables, 
+otherwise using normal local variables, wont be tracked by React, and hence doesnt reflect on UI on change
+
